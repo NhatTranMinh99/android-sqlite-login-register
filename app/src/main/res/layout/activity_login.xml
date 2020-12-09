@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/layout_login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/hacker_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:textColor="#001D43"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="H4CK3R HUB"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_user" />
+
+        <EditText
+            android:id="@+id/inp_username"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/user_icon"
+            android:background="@drawable/round_edittext"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:maxLength="18"
+            android:hint="type in username" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/password_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_lock" />
+
+        <EditText
+            android:id="@+id/inp_password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/password_icon"
+            android:background="@drawable/round_edittext"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:maxLength="18"
+            android:hint="type in password" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textColor="#FFF"
+        android:text="LOGIN" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000"
+        android:background="@null"
+        android:textSize="15dp"
+        android:text="or" />
+
+    <Button
+        android:id="@+id/btn_to_register"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:stateListAnimator="@null"
+        android:textSize="15dp"
+        android:textColor="#006FFF"
+        android:text="Create new account" />
+</LinearLayout>
