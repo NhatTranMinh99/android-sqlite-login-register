@@ -67,11 +67,6 @@ public class RegisterActivity extends AppCompatActivity {
     private void loadDB() {
         myDbHelper = new DatabaseHelper(RegisterActivity.this);
         try {
-            myDbHelper.createDataBase();
-        } catch (IOException ioe) {
-            throw new Error("Unable to create database");
-        }
-        try {
             myDbHelper.openDataBase();
         } catch (SQLException sqle) {
             throw sqle;

@@ -47,7 +47,6 @@
             android:background="@drawable/round_edittext"
             android:padding="10dp"
             android:textSize="20sp"
-            android:maxLength="18"
             android:hint="type in username" />
     </RelativeLayout>
 
