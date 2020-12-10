@@ -47,7 +47,10 @@ public class LoginActivity extends AppCompatActivity {
                     String query = "SELECT * FROM user WHERE uname='" + username + "' and pass='" + password + "'";
                     Cursor c = myDbHelper.rawQuery(query, null);
                     if (c != null && c.moveToFirst()) {
-                        Toast.makeText(LoginActivity.this, "Logged in as " + username, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        intent.putExtra("username", username);
+                        startActivity(intent);
+                        finish();
                     } else {
                         Toast.makeText(LoginActivity.this, "Wrong username or password", Toast.LENGTH_SHORT).show();
                     }
